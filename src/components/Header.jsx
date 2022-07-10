@@ -5,7 +5,7 @@ import menu from "@icons/icon_menu.svg";
 import logo from "@logos/logobsale.jpg";
 import useGetProducts from "../hooks/useGetProducts";
 
-const API = "http://localhost:3000/api/category";
+const API = "https://polar-falls-16849.herokuapp.com/api/category";
 
 const Header = () => {
   const categories = useGetProducts(API)
