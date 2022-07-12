@@ -35,8 +35,21 @@ nav {
   padding: 8px;
   border-radius: 8px;
 }
+.navbar-left ul li button,
+.navbar-right ul li button {
+  text-decoration: none;
+  color: var(--very-light-pink);
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 8px;
+}
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover {
+  border: 1px solid var(--hospital-green);
+  color: var(--hospital-green);
+}
+.navbar-left ul li button:hover,
+.navbar-right ul li button:hover {
   border: 1px solid var(--hospital-green);
   color: var(--hospital-green);
 }
