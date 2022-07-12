@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import '../styles/Cards.scss';
 
 import addCart from '@icons/bt_add_to_cart.svg';
