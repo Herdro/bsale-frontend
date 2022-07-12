@@ -8,7 +8,7 @@ import useGetProducts from "../hooks/useGetProducts";
 const API = "https://polar-falls-16849.herokuapp.com/api/category";
 
 const Header = () => {
-  const categories = useGetProducts(API)
+  const categories = useGetProducts(API);
   return (
     <nav>
       <img src={menu} alt="menu" className="menu" />
@@ -19,8 +19,8 @@ const Header = () => {
             <a href="/">All</a>
           </li>
           {categories.map(category => (
-            <li>
-              <a href={`/${category.name}`} >{category.name}</a>
+            <li key={category.name}>
+              <a href={`?category=${category.name}`} >{category.name}</a>
             </li>
           ))}
         </ul>
