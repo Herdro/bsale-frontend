@@ -52,7 +52,43 @@
   margin-bottom: 0;
   color: var(--very-light-pink);
 }
+.form {
+	display: flex;
+	flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.input {
+	background-color: var(--text-input-field);
+  width: 300px;
+	border: none;
+	border-radius: 8px;
+	height: 15px;
+	font-size: var(--md);
+	padding: 6px;
+  margin-top: 12px;
+	margin-bottom: 12px;
+  margin-right: 10px;
+}
+.primary-button {
+	background-color: var(--hospital-green);
+	border-radius: 8px;
+	border: none;
+	color: var(--white);
+	width: 100px;
+	cursor: pointer;
+	font-size: var(--sm);
+	font-weight: bold;
+	height: 30px;
+}
+.login-button {
+}
 @media (max-width: 640px) {
+  .logo {
+    display: block;
+  }
   .cards-container {
     grid-template-columns: repeat(auto-fill, 140px);
   }
